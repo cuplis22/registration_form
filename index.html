@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form method="post" action="./forminput.html" class="form">
+            <div class="input-box">
+                <label> Full Name </label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" minlength="2" required>
+            </div>
+
+            <div class="input-box">
+                <label> Email Address </label>
+                <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>  Phone Number </label>
+                    <input id="phone" name="phone" type="tel" placeholder="Enter your number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+                </div>
+
+                <div class="input-box">
+                    <label> Birth Date </label>
+                    <input id="date" name="date" type="date" placeholder="Enter birth date" required>
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3> Gender </h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input id="gender" name="gender" type="radio" name="gender" required>
+                        <label for="check">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input id="gender" name="gender" type="radio" name="gender" required>
+                        <label for="check">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input id="gender" name="gender" type="radio" name="gender" required>
+                        <label for="check">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box address">
+                <label> Address </label>
+                <input id="address" name="address" type="text" placeholder="Enter street address" required>
+                <input id="address2" name="address2" type="text" placeholder="Enter your subdistrict" required>
+
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option>Country</option>
+                            <option>Jawa Timur</option>
+                            <option>Jawa Barat</option>
+                            <option>Jawa Tengah</option>
+                        </select>
+                    </div>
+                    <input id="city" name="city" type="text" placeholder="Enter your city" required>
+                </div>
+
+                <div class="column">
+                    <input id="region" name="region" type="text" placeholder="Enter you region" required>
+                    <input id="code" name="code" type="number" placeholder="Enter postal code" required>
+                </div>
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
